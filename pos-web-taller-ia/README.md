@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+## Configuración previa
+
+1. Copia el archivo `.env.example` a `.env` y actualiza la variable `DATABASE_URL` con los datos de tu servidor MySQL.
+2. Instala las dependencias con `npm install`.
+3. Genera el cliente de Prisma con `npx prisma generate`.
+4. Sincroniza el esquema a la base de datos con `npx prisma db push`.
+5. (Opcional) Ejecuta `npm run db:seed` para asegurar la existencia del usuario administrador `admin@admin.com` con la contraseña `123456`.
+
 First, run the development server:
 
 ```bash
