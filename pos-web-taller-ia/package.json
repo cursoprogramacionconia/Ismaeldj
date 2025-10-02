@@ -1,6 +1,16 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:seed": "prisma db seed"
+  },
   "dependencies": {
     "@prisma/client": "^6.16.3",
     "prisma": "^6.16.3"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }

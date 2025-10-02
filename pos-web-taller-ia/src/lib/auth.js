@@ -3,8 +3,8 @@ import { randomBytes, scryptSync, timingSafeEqual } from "crypto";
 const KEY_LENGTH = 64;
 
 export function hashPassword(password) {
-  if (typeof password !== "string" || password.length < 8) {
-    throw new Error("La contraseña debe tener al menos 8 caracteres.");
+  if (typeof password !== "string" || password.length < 6) {
+    throw new Error("La contraseña debe tener al menos 6 caracteres.");
   }
 
   const salt = randomBytes(16).toString("hex");
